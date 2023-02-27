@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">demo</string>
+    <string-array name="country">
+        <item>Việt Nam</item>
+        <item>Nhật Bản</item>
+        <item>Hàn Quốc </item>
+    </string-array>
+    <string-array name="phep">
+        <item>+</item>
+        <item>-</item>
+        <item>x</item>
+        <item>:</item>
+    </string-array>
+    <string-array name="tech">
+        <item>android</item>
+        <item>java</item>
+        <item>python</item>
+        <item>C++</item>
+        <item>Ajax</item>
+        <item>NodeJs</item>
+    </string-array>
+</resources>
