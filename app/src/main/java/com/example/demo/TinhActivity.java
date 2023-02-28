@@ -33,7 +33,7 @@ public class TinhActivity extends AppCompatActivity implements View.OnClickListe
             n2 = Double.parseDouble(nn2);
             String kk = tinhtoan(n1,n2,"+");
             kq.setText(kk);
-            Toast.makeText(getApplicationContext(),kk,Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),kk,Toast.LENGTH_LONG).show();// không phải this
         }catch (NumberFormatException e){
             Toast.makeText(getApplicationContext(),"Nhập 2 số",Toast.LENGTH_LONG).show();
         }

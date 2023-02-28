@@ -81,7 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="132dp"
         android:layout_marginTop="10dp"
-        android:onClick="add"
+        android:onClick="sub"
         android:text="Hiệu"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btAdd" />
