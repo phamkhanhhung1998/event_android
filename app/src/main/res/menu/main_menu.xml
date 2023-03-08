@@ -10,11 +10,13 @@
             <item
                 android:id="@+id/mEmail"
                 android:title="Email"
+                android:icon="@drawable/email"
 
                 />
             <item
                 android:id="@+id/mPhone"
                 android:title="Phone"
+                android:icon="@drawable/email"
                 />
 
         </menu>

@@ -6,6 +6,7 @@ import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TimePicker;
@@ -15,6 +16,7 @@ import java.util.Calendar;
 public class DateTime extends AppCompatActivity implements View.OnClickListener{
 
     private EditText et,ed;
+    private Button btDate, btTime;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,7 @@ public class DateTime extends AppCompatActivity implements View.OnClickListener{
         ed=findViewById(R.id.eDate);
         et.setOnClickListener(this);
         ed.setOnClickListener(this);
+
     }
 
     @Override
@@ -32,6 +35,7 @@ public class DateTime extends AppCompatActivity implements View.OnClickListener{
             Calendar c = Calendar.getInstance();
             int hh = c.get(Calendar.HOUR_OF_DAY);
             int mm = c.get(Calendar.MINUTE);
+            // click chuột vào thì timepicker mới hiện ra
             TimePickerDialog timePickerDialog = new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
                 @Override
                 public void onTimeSet(TimePicker timePicker, int h, int m) {

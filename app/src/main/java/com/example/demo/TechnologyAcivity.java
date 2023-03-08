@@ -29,6 +29,7 @@ public class TechnologyAcivity extends AppCompatActivity {
         setContentView(R.layout.activity_technology_acivity);
         listView = findViewById((R.id.view));
         tv = findViewById(R.id.tv);
+        //Đăng ký ngữ cảnh cho thằng tv
         registerForContextMenu(tv);
 
         initData();
@@ -75,10 +76,10 @@ public class TechnologyAcivity extends AppCompatActivity {
                 System.exit(0);
                 break;
             case R.id.mEmail:
-                Toast.makeText(this,"Email", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,"bạn chọn Email", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mPhone:
-                Toast.makeText(this,"Phone", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,"bạn chọn Phone", Toast.LENGTH_SHORT).show();
                 break;
         }
         return super.onOptionsItemSelected(item);
@@ -95,7 +96,9 @@ public class TechnologyAcivity extends AppCompatActivity {
     public boolean onContextItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()){
-            case R.id.mRed:tv.setTextColor(Color.RED);
+           case R.id.mRed:
+               //tv.setTextColor(Color.RED);
+             tv.setTextColor(getResources().getColor(R.color.purple_500));
                 break;
             case R.id.mBlue:tv.setTextColor(Color.BLUE);
                 break;

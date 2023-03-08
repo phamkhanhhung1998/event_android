@@ -46,5 +46,11 @@ public class TechnologyAdapter extends ArrayAdapter<Technology> {
 
         return mList[position];
     }
+    //them
+//    public void addItem(Technology t){
+//        mList.add(t);
+//
+//    }
+
 
 }
